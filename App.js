@@ -10,6 +10,9 @@ export default function App() {
       
       <View style={styles.imageIcon}>
         <Image style={styles.imageIcon} source={require('./assets/favicon.png')} />
+        {/*
+          Para poder colocar uma imagem é preciso importar o Image e colocar soucer igual no código
+        */}
       </View>
       
       
