@@ -5,12 +5,13 @@ import Cabecalho from './components/Cabecalho';
 
 export default function App() {
   //Tudo que for retornar na tela tem que ser na view
+
   return (
     <>
-      <Cabecalho min='10' max='20'/>
+      <Cabecalho min="30" max="20"/>
       <View style={styles.container}>
         <Text>Está funcionand</Text>
-      </View>
+      </View> 
     </>
   );
 }
