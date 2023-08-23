@@ -1,23 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
+import Cabecalho from './components/Cabecalho';
 //São os imports coisas normais
 
 export default function App() {
   //Tudo que for retornar na tela tem que ser na view
   return (
-    <View style={styles.container}>
-      <Text>Tray again!</Text>
-      
-      <View style={styles.imageIcon}>
-        <Image style={styles.imageIcon} source={require('./assets/favicon.png')} />
-        {/*
-          Para poder colocar uma imagem é preciso importar o Image e colocar soucer igual no código
-        */}
+    <>
+      <Cabecalho min='10' max='20'/>
+      <View style={styles.container}>
+        <Text>Está funcionand</Text>
       </View>
-      
-      
-      
-    </View>
+    </>
   );
 }
 
