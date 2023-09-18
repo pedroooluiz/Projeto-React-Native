@@ -28,35 +28,37 @@ export default function BiscSorte() {
   }
 
   return (
-    <View style={styles.container}>
-          <Image
-            style={styles.imagem}
-            source={biscoitoQuebrado 
-              ? imagemBiscoitoAberto 
-              : imagemBiscoitoFechado}
-          />
-
-          <Text style={styles.mensagem}>
-            {
-              biscoitoQuebrado ? frase : " "
-            }
-          </Text>
-
-          <Pressable 
-              style={styles.botaoAmarelo}
-              onPress={exibirFrase} 
-              disabled={biscoitoQuebrado}
-              >
-            <Text style={styles.textoBotaoAmarelo}>Quebrar Biscoito</Text>
-          </Pressable>
-
-          <Pressable 
-            style={styles.botaoAmarelo} 
-            onPress={() => setBiscoitoQuebrado(false)}>
-            <Text style={styles.textoBotaoAmarelo}>Reiniciar Biscoito</Text>
-          </Pressable>
-
-    </View>
+      <>
+        <View style={styles.container}>
+              <Image
+                style={styles.imagem}
+                source={biscoitoQuebrado 
+                  ? imagemBiscoitoAberto 
+                  : imagemBiscoitoFechado}
+              />
+    
+              <Text style={styles.mensagem}>
+                {
+                  biscoitoQuebrado ? frase : " "
+                }
+              </Text>
+    
+              <Pressable 
+                  style={styles.botaoAmarelo}
+                  onPress={exibirFrase} 
+                  disabled={biscoitoQuebrado}
+                  >
+                <Text style={styles.textoBotaoAmarelo}>Quebrar Biscoito</Text>
+              </Pressable>
+    
+              <Pressable 
+                style={styles.botaoAmarelo} 
+                onPress={() => setBiscoitoQuebrado(false)}>
+                <Text style={styles.textoBotaoAmarelo}>Reiniciar Biscoito</Text>
+              </Pressable>
+    
+        </View>
+      </>
   );
 }
 
