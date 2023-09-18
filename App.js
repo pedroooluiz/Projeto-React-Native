@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import Cabecalho from './components/Cabecalho';
 import NumAleatorio from './components/NumAleatorio';
+import BiscSorte from './components/BiscSorte';
 //São os imports coisas normais
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
       <View style={styles.container}>
         <Text>Está funcionand</Text>
         <NumAleatorio valorMinimo={10} valorMaximo={100} />
+        <BiscSorte />
       </View> 
     </>
   );
