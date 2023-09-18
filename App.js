@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 import Cabecalho from './components/Cabecalho';
 import NumAleatorio from './components/NumAleatorio';
 import BiscSorte from './components/BiscSorte';
+import Profile from './components/Profile';
 //São os imports coisas normais
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
         <Text>Está funcionand</Text>
         <NumAleatorio valorMinimo={10} valorMaximo={100} />
         <BiscSorte />
+        <Profile />
       </View> 
     </>
   );
