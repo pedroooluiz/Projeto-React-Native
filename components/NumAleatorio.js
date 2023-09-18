@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button, Pressable, StyleSheet, Text } from "react-native";
 
-export default function GeradorNumeroAleatorio({ valorMinimo, valorMaximo }) {
+export default function NumAleatorio({ valorMinimo, valorMaximo }) {
 
     const [numeroAleatorio, setNumeroAleatorio] = useState('')
     
