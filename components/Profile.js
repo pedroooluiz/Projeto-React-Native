@@ -3,33 +3,35 @@ import { Image, StyleSheet, Text, View } from 'react-native'
 
 export default function Profile(props) {
     return (
-        <View style={styles.container}>
-            <Image
-                source={{ uri: `${props.imgUri}` }}
-                style={styles.imagem}
-            />
-
-            <View style={styles.container2}>
-                <Text style={[styles.texto, styles.label]}>Nome:</Text>
-                <Text style={styles.texto}>{props.nome}</Text>
+        <>
+            <View style={styles.container}>
+                <Image
+                    source={{ uri: `${props.imgUri}` }}
+                    style={styles.imagem}
+                />
+    
+                <View style={styles.container2}>
+                    <Text style={[styles.texto, styles.label]}>Nome:</Text>
+                    <Text style={styles.texto}>{props.nome}</Text>
+                </View>
+    
+                <View style={styles.container2}>
+                    <Text style={[styles.texto, styles.label]}>Gênero:</Text>
+                    <Text style={styles.texto}>{props.genero}</Text>
+                </View>
+    
+                <View style={styles.container2}>
+                    <Text style={[styles.texto, styles.label]}>Telefone:</Text>
+                    <Text style={styles.texto}>{props.telefone}</Text>
+                </View>
+    
+                <View style={styles.container2}>
+                    <Text style={[styles.texto, styles.label]}>Email:</Text>
+                    <Text style={styles.texto}>{props.email}</Text>
+                </View>
+    
             </View>
-
-            <View style={styles.container2}>
-                <Text style={[styles.texto, styles.label]}>Gênero:</Text>
-                <Text style={styles.texto}>{props.genero}</Text>
-            </View>
-
-            <View style={styles.container2}>
-                <Text style={[styles.texto, styles.label]}>Telefone:</Text>
-                <Text style={styles.texto}>{props.telefone}</Text>
-            </View>
-
-            <View style={styles.container2}>
-                <Text style={[styles.texto, styles.label]}>Email:</Text>
-                <Text style={styles.texto}>{props.email}</Text>
-            </View>
-
-        </View>
+        </>
     )
 }
 
